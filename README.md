@@ -57,6 +57,21 @@ A modern, responsive Spotify-inspired web music player built using **HTML, CSS, 
 
 ---
 
+## Screenshots
+
+<img width="1920" height="1080" alt="Home screen" src="https://github.com/user-attachments/assets/210aa884-6dd1-4610-81b5-d25057cd5c6c" />
+<img width="1920" height="1080" alt="Song playing from your library" src="https://github.com/user-attachments/assets/5087f020-37a7-49ce-b161-81ed2eff8b6f" />
+<img width="1387" height="150" alt="playbar and controls" src="https://github.com/user-attachments/assets/09f4d141-f540-484e-9520-260cf74b3e36" />
+<img width="493" height="913" alt="Your library section" src="https://github.com/user-attachments/assets/b443227f-1b47-4a85-8462-20aa809635d3" />
+<img width="1920" height="1080" alt="library changes according to the album" src="https://github.com/user-attachments/assets/d21ddd94-d6e4-42d9-8fdf-3748fa37c306" />
+<img width="1920" height="1080" alt="responsive design" src="https://github.com/user-attachments/assets/871ecf46-9903-4d83-9cc6-8ccfa5dcf407" />
+<img width="1920" height="1080" alt="website on a tablet" src="https://github.com/user-attachments/assets/09797b58-07a9-4a56-86cd-edde62dc11e6" />
+<img width="1920" height="1080" alt="hamburger section on tablet" src="https://github.com/user-attachments/assets/060931cc-ea3d-4e85-b951-26d8325eaeb3" />
+<img width="1920" height="1080" alt="website on phone" src="https://github.com/user-attachments/assets/eca30c42-e29a-46b3-ac5c-c16fc6f1175f" />
+<img width="1920" height="1080" alt="hamburger section on phone" src="https://github.com/user-attachments/assets/aa2e5dee-a624-4d47-966a-85922c46125e" />
+
+---
+
 ## 📂 Project Structure
 
 ```text
@@ -226,6 +241,8 @@ Through this project, I learned:
 4. Event listeners and user interactions
 5. Project structuring and code organization
 6. Version control with Git and GitHub
+
+---
 
 ## 📄 License
 
