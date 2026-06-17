@@ -20,7 +20,8 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getsongs(folder) {
     currfolder = folder;
-    let a = await fetch(`http://127.0.0.1:3000/Project%202/${folder}/`);
+    // let a = await fetch(`http://127.0.0.1:3000/Front-end/Project%202/${folder}/`);
+    let a = await fetch(`/Front-end/Project%202/${folder}/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -40,7 +41,6 @@ async function getsongs(folder) {
                             <img class="invert" src="music.svg" alt="">
                             <div class="info">
                                 <div>${song.replaceAll("songs/", "")}</div>
-                                <div>Song artist</div>
                             </div>
                             <div class="playnow">
                                 <span>Play Now</span>
@@ -60,7 +60,8 @@ async function getsongs(folder) {
 const playmusic = (track, pause = false) => {
     // let audio = new Audio("./songs/" + track);
     // currentsong.src = `/${currfolder}/` + track
-    currentsong.src = `/Project%202/${currfolder}/${encodeURIComponent(track)}`
+    // currentsong.src = `/Project%202/${currfolder}/${encodeURIComponent(track)}`
+    currentsong.src = `/Front-end/Project%202/${currfolder}/${encodeURIComponent(track)}`
     if (!pause) {
         currentsong.play();
         play.src = "pause.svg"
@@ -71,7 +72,8 @@ const playmusic = (track, pause = false) => {
 
 
 async function displayalbums() {
-    let a = await fetch(`http://127.0.0.1:3000/Project%202/songs/`);
+    // let a = await fetch(`http://127.0.0.1:3000/Project%202/songs/`);
+    let a = await fetch(`/Front-end/Project%202/songs/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -86,7 +88,8 @@ async function displayalbums() {
                 .split("\\")
                 .pop()
                 .replace("/", "");
-            let a = await fetch(`http://127.0.0.1:3000/Project%202/songs/${folder}/info.json`) ;
+            // let a = await fetch(`http://127.0.0.1:3000/Project%202/songs/${folder}/info.json`) ;
+            let a = await fetch(`/Front-end/Project%202/songs/${folder}/info.json`);
             let response = await a.json();
             cardcontainer.innerHTML = cardcontainer.innerHTML + `<div data-folder="${folder}" class="card">
                         <div class="play">
@@ -95,7 +98,8 @@ async function displayalbums() {
                                 <path d="M18 14L34 24L18 34Z" fill="#000000" />
                             </svg>
                         </div>
-                        <img src="/Project%202/songs/${folder}/cover.jpg" alt="">
+                        
+                        <img src="/Front-end/Project%202/songs/${folder}/cover.jpg" alt="">
                         <h3>${response.title}</h3>
                         <p><span class="artists e-10451-text encore-text-body-small GlsYBFUL2pUeAq_E"
                                 data-encore-id="text"><a draggable="false" dir="auto" href="/artist/6Ghvu1VvMGScGpOUJBAHNH">${response.description}</a>
